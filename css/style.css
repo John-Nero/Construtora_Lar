@@ -1,0 +1,515 @@
+/* Importa a fonte Roboto do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Define variáveis globais para facilitar a manutenção do código */
+:root {
+  --cor-primaria: #fb7422; /* Cor principal do site */
+}
+
+/* Aplica a fonte 'Roboto' a todo o corpo do site */
+body {
+  font-family: Roboto;
+}
+
+/* Estiliza os títulos h2 com tamanho e peso de fonte específicos */
+h2 {
+  font-size: 1.5em; /* Tamanho da fonte em relação ao tamanho do elemento pai */
+  font-weight: 500; /* Peso da fonte (não muito leve, não muito pesado) */
+}
+
+/* Estiliza o container principal do site com margem e largura definidos */
+.site {
+  margin: 0 10%; /* Adiciona margem nas laterais do container */
+  width: 80%; /* Largura do container principal */
+}
+
+/*########################################*/
+/*################CABEÇALHO###############*/
+/*########################################*/
+
+/* Estiliza o cabeçalho com uma margem superior e um layout flexível */
+.cabecalho {
+  margin-top: 0.5%; /* Margem superior do cabeçalho */
+  display: flex; /* Flexbox para alinhar os elementos do cabeçalho */
+  justify-content: space-around; /* Distribui os itens de forma equidistante */
+}
+
+/* Estiliza as imagens dentro do cabeçalho, definindo a largura */
+.cabecalho img {
+  width: 8%; /* Largura das imagens do cabeçalho */
+}
+
+/* Estiliza a lista de itens do cabeçalho com layout flexível */
+.cabecalho ul {
+  display: flex; /* Flexbox para alinhar os itens da lista horizontalmente */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  width: 80%; /* Largura da lista de itens */
+  justify-content: space-evenly; /* Distribui os itens de forma igual */
+}
+
+/* Estiliza cada item da lista do cabeçalho */
+.cabecalho ul li {
+  font-size: 1.5em; /* Tamanho da fonte para os itens da lista */
+  margin: 0 8% 0 0%; /* Margem à direita de cada item */
+}
+
+/*########################################*/
+/*################BANNER##################*/
+/*########################################*/
+
+/* Estiliza a imagem do banner, definindo largura e margem */
+.banner img {
+  width: 100%; /* Largura total da imagem */
+  margin: 1% 0; /* Margem superior e inferior da imagem */
+}
+
+/*########################################*/
+/*################INFORMAÇÕES#############*/
+/*########################################*/
+
+/* Estiliza a linha horizontal */
+hr {
+  height: 1.5px; /* Altura da linha */
+  background: black; /* Cor de fundo da linha */
+  border: 0; /* Remove a borda padrão */
+}
+
+/* Estiliza a seção de informações com layout flexível e centralizado */
+.informacoes {
+  margin: 2% 0; /* Margem superior e inferior */
+  display: flex; /* Flexbox para o layout */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estiliza os containers de informações dentro da seção */
+.informacoes div {
+  display: flex; /* Flexbox para alinhar os elementos */
+  width: 26%; /* Largura de cada container de informação */
+  margin: 0 4%; /* Margem à esquerda e à direita */
+}
+
+/* Estiliza o conteúdo dentro de cada div de informações */
+.informacoes div div {
+  display: flex; /* Flexbox para alinhamento interno */
+  width: 69%; /* Largura do conteúdo */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  text-align: left; /* Alinha o texto à esquerda */
+  margin-left: 21px; /* Espaçamento à esquerda */
+}
+
+/* Estiliza as imagens dentro da seção de informações */
+.informacoes img {
+  width: 30%; /* Largura da imagem */
+  height: 85%; /* Altura da imagem */
+}
+
+/* Estiliza o conteúdo em cada sub-container dentro das divs de informações */
+.informacoes div div div {
+  display: flex; /* Flexbox para alinhamento interno */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  margin: 0 0 0 4%; /* Margem à esquerda */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+}
+
+/* Estiliza os parágrafos dentro da seção de informações */
+.informacoes p {
+  margin-top: 5%; /* Margem superior do parágrafo */
+}
+
+/*########################################*/
+/*################SOBRE NÓS###############*/
+/*########################################*/
+
+/* Estiliza o título h2 dentro da seção sobre */
+.sobre h2 {
+  font-size: 3em; /* Tamanho da fonte do título */
+}
+
+/* Estiliza os parágrafos na seção sobre */
+.sobre p {
+  margin-top: 5%; /* Margem superior do parágrafo */
+  font-size: 1.3em; /* Tamanho da fonte */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estiliza o parágrafo dentro de sobre_bloco_1 */
+.sobre_bloco_1 p {
+  width: 75%; /* Largura do parágrafo */
+}
+
+/* Estiliza os blocos dentro da seção sobre */
+.sobre_bloco_1,
+.sobre_bloco_2 {
+  display: flex; /* Flexbox para alinhar os itens */
+}
+
+/* Estiliza os divs dentro de sobre_bloco_1 */
+.sobre_bloco_1 > div {
+  display: flex; /* Flexbox para o layout interno */
+}
+
+/* Estiliza a primeira seção de sobre_bloco_1 */
+.sobre_bloco_1 {
+  margin: 4% 5% 0 3%; /* Margem superior, direita, inferior e esquerda */
+  margin-bottom: 3%; /* Margem inferior */
+}
+
+/* Estiliza os divs dentro de sobre_bloco_1 */
+.sobre_bloco_1 div {
+  display: flex; /* Flexbox para alinhamento interno */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  width: 50%; /* Largura de cada div */
+  margin: 68px 0 0 0; /* Margem superior */
+}
+
+/* Estiliza os links dentro da seção sobre */
+.sobre a {
+  width: 15%; /* Largura do link */
+  padding: 3% 8%; /* Espaçamento interno do link */
+  border-radius: 30px; /* Bordas arredondadas */
+  background: var(--cor-primaria); /* Cor de fundo do link */
+  color: white; /* Cor do texto */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estiliza os links dentro de sobre_bloco_1 */
+.sobre_bloco_1 a {
+  margin: 2%; /* Margem em torno do link */
+}
+
+/* Estiliza as imagens dentro de sobre_bloco_1 */
+.sobre_bloco_1 img {
+  width: 50%; /* Largura da imagem */
+}
+
+/* Estiliza as imagens dentro de sobre_bloco_2 */
+.sobre_bloco_2 img {
+  width: 80%; /* Largura da imagem */
+}
+
+/* Alinha o conteúdo de sobre_bloco_2 à direita */
+.sobre_bloco_2 {
+  text-align: end; /* Alinha o texto à direita */
+}
+
+/* Estiliza os divs dentro de sobre_bloco_2 */
+.sobre_bloco_2 div {
+  width: 70%; /* Largura do div */
+  margin: 2% 8% 0 0; /* Margem superior, direita e inferior */
+}
+
+/* Estiliza os parágrafos dentro de sobre_bloco_2 */
+.sobre_bloco_2 p {
+  width: 75%; /* Largura do parágrafo */
+  text-align: end; /* Alinha o texto à direita */
+  margin: 4% 0 10% 25%; /* Margens em torno do parágrafo */
+}
+
+/* Esconde o vídeo da página */
+.video {
+  display: none; /* Esconde o elemento com a classe 'video' */
+}
+
+/*########################################*/
+/*################CONFIRA AGORA###########*/
+/*########################################*/
+
+/* Estiliza o título h2 da seção 'confira agora' com margem e tamanho de fonte */
+.confira_agora > h2 {
+  margin: 5% 41%; /* Margem superior e lateral */
+  font-size: 2em; /* Tamanho da fonte */
+}
+
+/* Organiza os blocos dentro da seção 'confira agora' em linha */
+.confira_agora_blocos {
+  display: flex; /* Flexbox para o layout */
+}
+
+/* Estiliza cada bloco dentro de 'confira agora' */
+.confira_agora_blocos div {
+  display: flex; /* Flexbox para o layout interno */
+  width: 31%; /* Largura de cada bloco */
+  margin: 0 2%; /* Margem à esquerda e direita */
+  flex-direction: column; /* Organiza os itens em coluna */
+  align-items: center; /* Alinha os itens ao centro */
+}
+
+/* Estiliza as imagens dentro de 'confira agora' */
+.confira_agora_blocos div img {
+  width: 70%; /* Largura da imagem */
+}
+
+/* Estiliza o título h2 dentro de cada bloco */
+.confira_agora_blocos div h2 {
+  margin: 5% 0; /* Margem superior e inferior */
+}
+
+/* Estiliza os parágrafos dentro de cada bloco */
+.confira_agora_blocos div p {
+  font-size: 1.1em; /* Tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estiliza a seção de cards e foco */
+.cards_e_foco {
+  display: flex; /* Flexbox para layout */
+  margin: 0 0 0 3%; /* Margem à esquerda */
+}
+
+/* Estiliza os elementos dentro de 'cards_e_foco' */
+.cards_e_foco div,
+.card_em_foco {
+  width: 50%; /* Largura dos elementos */
+}
+
+/* Estiliza os blocos dentro de 'cards_e_foco' */
+.cards_e_foco > div > div {
+  display: flex; /* Flexbox para layout */
+  margin-bottom: 8%; /* Margem inferior */
+  width: 83%; /* Largura do bloco */
+}
+
+/* Estiliza a imagem de seleção de card */
+.cards_e_foco_selecao_card img {
+  margin: 0 3% 0 0; /* Margem à direita */
+  width: 25%; /* Largura da imagem */
+  border-radius: 55px; /* Bordas arredondadas */
+}
+
+/* Estiliza o conteúdo dentro de 'cards_e_foco_selecao_card' */
+.cards_e_foco_selecao_card div {
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  width: 83%; /* Largura do conteúdo */
+}
+
+/* Estiliza o título dentro de 'cards_e_foco_selecao_card' */
+.cards_e_foco_selecao_card div h2 {
+  margin-bottom: 11%; /* Margem inferior */
+}
+
+/* Estiliza o parágrafo dentro de 'cards_e_foco_selecao_card' */
+.cards_e_foco_selecao_card div p {
+  font-size: 1.5em; /* Tamanho da fonte */
+}
+
+/* Estiliza a seção de card em foco */
+.card_em_foco {
+  display: flex; /* Flexbox para layout */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+}
+
+/* Estiliza a imagem dentro de 'card_em_foco' */
+.card_em_foco img {
+  width: 94%; /* Largura da imagem */
+  height: 52%; /* Altura da imagem */
+}
+
+/* Estiliza o título h2 dentro de 'card_em_foco' */
+.card_em_foco h2 {
+  margin: 5% 0; /* Margem superior e inferior */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estiliza os parágrafos dentro de 'card_em_foco' */
+.card_em_foco p {
+  text-align: center; /* Alinha o texto ao centro */
+  width: 83%; /* Largura do parágrafo */
+  font-size: 1.3em; /* Tamanho da fonte */
+}
+
+/* Estiliza a seção de empreendimentos */
+.empreendimentos {
+  text-align: center; /* Alinha o texto ao centro */
+  margin-bottom: 5%; /* Margem inferior */
+}
+
+/* Organiza os blocos de empreendimentos */
+.empreendimentos_bloco {
+  display: flex; /* Flexbox para o layout */
+  flex-wrap: wrap; /* Permite quebrar os itens para a próxima linha se necessário */
+  gap: 20px; /* Espaço entre os blocos */
+  justify-content: space-evenly; /* Ajusta os blocos para preencher o espaço disponível */
+}
+
+/* Estiliza os blocos individuais dentro de 'empreendimentos_bloco' */
+.empreendimentos_bloco > div {
+  position: relative; /* Permite posicionar o texto por cima da imagem */
+  width: 15%; /* Largura do bloco */
+  overflow: hidden; /* Impede que o conteúdo ultrapasse os limites */
+}
+
+/* Estiliza as imagens dentro de 'empreendimentos_bloco' */
+.empreendimentos_bloco img {
+  width: 100%; /* Largura da imagem */
+}
+
+/* Estiliza o texto sobrepondo a imagem */
+.empreendimentos_bloco div > div {
+  position: absolute; /* Coloca o texto por cima da imagem */
+  bottom: 0; /* Alinha o texto na parte inferior */
+  width: 100%; /* Largura do fundo do texto */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo translúcido */
+  padding: 3%; /* Espaço interno ao texto */
+}
+
+/* Estiliza os parágrafos dentro de 'empreendimentos_bloco' */
+.empreendimentos_bloco div > div p {
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  margin: 5px 0; /* Ajusta a margem entre os parágrafos */
+}
+
+/*########################################*/
+/*################COMENTÁRIOS#############*/
+/*########################################*/
+
+/* Estiliza a seção de comentários com alinhamento e margens */
+.comentarios {
+  text-align: center; /* Centraliza o conteúdo */
+  margin: 0 36%; /* Define as margens lateralmente */
+  width: 29.5%; /* Largura da seção */
+  justify-content: center; /* Alinha o conteúdo */
+}
+
+/* Estiliza a linha horizontal dentro de comentários */
+.comentarios hr {
+  width: 45%; /* Define a largura da linha */
+}
+
+/* Estiliza a imagem dentro de comentários */
+.comentarios img {
+  width: 20%; /* Define a largura da imagem */
+}
+
+/*########################################*/
+/*##########ENTRE EM CONTATO##############*/
+/*########################################*/
+
+/* Estiliza a seção de 'entre em contato' com fundo e texto */
+.entre_em_contato {
+  background: var(--cor-primaria); /* Cor de fundo usando a variável */
+  height: 251px; /* Altura da seção */
+  color: white; /* Cor do texto */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estiliza o título h2 dentro de 'entre em contato' */
+.entre_em_contato h2 {
+  padding: 2% 0; /* Espaço superior e inferior */
+  font-size: 2em; /* Tamanho da fonte */
+  font-weight: 900; /* Deixa a fonte bem grossa (negrito máximo) */
+}
+
+/* Estiliza os parágrafos dentro de 'entre em contato' */
+.entre_em_contato p {
+  width: 29%; /* Largura do parágrafo */
+  margin: 0 0px 2% 35%; /* Margens */
+}
+
+/* Estiliza os links dentro de 'entre em contato' */
+.entre_em_contato a {
+  padding: 1% 3%; /* Espaço interno */
+  background: white; /* Cor de fundo do botão */
+  color: var(--cor-primaria); /* Cor do texto usando a variável */
+  border-radius: 25px; /* Bordas arredondadas */
+  font-weight: 500; /* Peso da fonte */
+}
+
+/*########################################*/
+/*##################RODAPÉ################*/
+/*########################################*/
+
+/* Estiliza o rodapé com flexbox e padding */
+.rodape {
+  padding: 1% 0 2% 0; /* Espaço interno */
+  display: flex; /* Flexbox para organizar os elementos */
+}
+
+/* Estiliza os blocos dentro do rodapé */
+.rodape div {
+  width: 79%; /* Largura do bloco */
+}
+
+/* Estiliza os títulos h3 dentro do rodapé */
+.rodape h3 {
+  margin: 3%; /* Margem */
+  font-weight: 900; /* Fonte bem grossa */
+  font-size: 1.3em; /* Tamanho da fonte */
+}
+
+/* Estiliza a seção 'sobre nós' dentro do rodapé */
+.rodape_sobre_nos div {
+  display: flex; /* Flexbox para organizar o conteúdo */
+}
+
+/* Estiliza as imagens dentro de 'sobre nós' no rodapé */
+.rodape_sobre_nos img {
+  width: 20%; /* Largura das imagens */
+}
+
+/* Estiliza o parágrafo dentro de 'sobre nós' no rodapé */
+.rodape_sobre_nos p {
+  margin: 3% 0; /* Margem */
+  width: 69%; /* Largura do parágrafo */
+}
+
+/* Estiliza o título h3 dentro da seção 'informações' do rodapé */
+.rodape_informacoes h3 {
+  margin: 3%; /* Margem */
+  font-weight: 800; /* Fonte um pouco mais grossa */
+  font-size: 1.3em; /* Tamanho da fonte */
+}
+
+/* Estiliza os itens da lista dentro da seção 'informações' */
+.rodape_informacoes li {
+  margin: 5% 2%; /* Margem entre os itens da lista */
+}
+
+/* Estiliza o título h3 dentro da seção 'contato' do rodapé */
+.rodape_contato h3 {
+  margin: 3% 10%; /* Margem */
+  font-weight: 800; /* Fonte um pouco mais grossa */
+  font-size: 1.3em; /* Tamanho da fonte */
+}
+
+/* Estiliza os itens da lista dentro da seção 'contato' */
+.rodape_contato li {
+  margin: 4% 2%; /* Margem entre os itens da lista */
+}
+
+/* Estiliza os links dentro da seção 'contato' */
+.rodape_contato a {
+  display: flex; /* Flexbox para organizar o conteúdo */
+  align-items: center; /* Alinha os itens ao centro */
+}
+
+/* Estiliza as imagens dentro da seção 'contato' */
+.rodape_contato img {
+  width: 6%; /* Largura das imagens */
+  margin: 0 2% 0 0; /* Margem à direita */
+}
+
+/* Estiliza o título h3 dentro da seção 'localização e horário' do rodapé */
+.rodape_localizacao_e_horario h3 {
+  margin: 3% 8%; /* Margem */
+}
+
+/* Estiliza os itens da lista dentro de 'localização e horário' */
+.rodape_localizacao_e_horario li {
+  display: flex; /* Flexbox para o layout */
+  margin: 7% 1%; /* Margem */
+  align-items: flex-end; /* Alinha os itens ao final */
+}
+
+/* Estiliza as imagens dentro da seção 'localização e horário' */
+.rodape_localizacao_e_horario li img {
+  margin-right: 4%; /* Margem à direita */
+  width: 8%; /* Largura das imagens */
+  height: auto; /* Altura automática para manter a proporção */
+}
+
+/* Estiliza os parágrafos dentro da seção 'localização e horário' */
+.rodape_localizacao_e_horario li p {
+  width: 72%; /* Largura do parágrafo */
+  font-size: 0.9em; /* Tamanho da fonte */
+}
